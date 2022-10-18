@@ -3,75 +3,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700italic,700,400italic" rel="stylesheet" type="text/css">
 
     <title>AAD WS 2022</title>
 </head>
 <body>
     <div class="post-content">
-						
 										
-        <h1>TERRA: Landscape Web App</h1>
-<p>Convert, Create and Analyze Landscape</p>
-<p>Terra is a web app for students or landscapers who aim to understand or study an specific territory. You can convert, create and analyze all the terrains you want from a heightmap image.  We have used the plugin Bison to obtain quick and easy analyze landscape results.</p>
-<p><a href="https://bimsc22-landscapetest.herokuapp.com/examples/terra/02_index_convert_img.html"><img loading="lazy" class="alignnone wp-image-140500 size-medium" src="https://www.iaacblog.com/wp-content/uploads/2022/04/bimsc_datamgmnt_01_jacinto-jesus-moros-montanes-1-730x408.jpg" alt="" width="730" height="408" srcset="https://www.iaacblog.com/wp-content/uploads/2022/04/bimsc_datamgmnt_01_jacinto-jesus-moros-montanes-1-730x408.jpg 730w, https://www.iaacblog.com/wp-content/uploads/2022/04/bimsc_datamgmnt_01_jacinto-jesus-moros-montanes-1-768x429.jpg 768w, https://www.iaacblog.com/wp-content/uploads/2022/04/bimsc_datamgmnt_01_jacinto-jesus-moros-montanes-1.jpg 1024w" sizes="(max-width: 730px) 100vw, 730px" /></a></p>
-<h2>Web App Tools</h2>
-<p>We developed Terra with diferent web tools:</p>
-<ul>
-<li>HTML: to define input and output parameters that we will need for our web,</li>
-<li>JAVASCRIPT: we will create the actions and process our web will compute or define, its our main brain in some way,</li>
-<li>CSS: styling it to have a fancy and coherent design.</li>
-<li>Rhino Compute: To compute grasshopper files inside the web app</li>
-</ul>
-<p><img loading="lazy" class="alignnone wp-image-140501 size-medium" src="https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-5-e1649006370511-730x349.jpg" alt="" width="730" height="349" srcset="https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-5-e1649006370511-730x349.jpg 730w, https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-5-e1649006370511-768x367.jpg 768w, https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-5-e1649006370511.jpg 919w" sizes="(max-width: 730px) 100vw, 730px" /></p>
-<h2><strong>Web App Workflow Use</strong></h2>
-<p><img loading="lazy" class="alignnone wp-image-140502 size-medium" style="font-size: 16px" src="https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-4-e1649006348971-730x310.jpg" alt="" width="730" height="310" srcset="https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-4-e1649006348971-730x310.jpg 730w, https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-4-e1649006348971-768x326.jpg 768w, https://www.iaacblog.com/wp-content/uploads/2022/04/presentacion-data-4-e1649006348971.jpg 904w" sizes="(max-width: 730px) 100vw, 730px" /></p>
-<p><strong>How to use Terra?:</strong></p>
-<ol>
-<li>Download heightmap .jpg of the site you are interesting on from the web:
-<p>
-https://tangrams.github.io/heightmapper/
-</p>
-</li>
-<li>Go to Terra Web App:
-<p>
-https://bimsc22-landscapetest.herokuapp.com/examples/terra/02_index_convert_img.html#
-</p>
-</li>
-<li><em>Upload Heightmap Image</em>: Take the image you downloaded and upload it.</li>
-<li><em>Set Elevation Range</em>: You should write the maximum and minimum height your heightmap has. You can see this information when you downloaded it tangram or you can invent it.</li>
-<li><em>Resolution</em>: If you dont want to detail information or it goes slow, set the resolution you want, the bigger the lest detail the landscape terrain.</li>
-<li><em>Choose Analyze Type</em> (choose from below which type of analyze you want to know and to visualize):
-<ul>
-<li><em>Terrain</em></li>
-<li><em>Slope</em></li>
-<li><em>Concavity</em></li>
-<li><em>Elevation</em></li>
-<li><em>Roughness</em></li>
-<li><em>Shade</em></li>
-<li><em>Orientation</em></li>
-<li><em>Viewshed</em></li>
-<li><em>Watershed</em></li>
-<li><em>Optimize Location</em></li>
-</ul>
-</li>
-<li><em>Set Slope Range</em>: When we choose the analyze type &#8220;Slope&#8221; we can set the degrees that we are interested in investigating.</li>
-<li><em>Set Concavity Range</em>: When we choose the analyze type &#8220;Concavity&#8221; we can set the percentage that we are interested in investigating.</li>
-<li><em>Set Roughness Range:</em> When we choose the analyze type &#8220;Roughness&#8221; we can set the percentage that we are interested in investigating.</li>
-<li><em>Set Sunlight Direction</em>: When we choose the analyze type &#8220;Shade&#8221; we can set the vector of the sunlight to know how is the shadeness.</li>
-<li><em>Set Orientation Range</em>: When we choose the analyze type &#8220;Orientation&#8221; we can set the percetage that we are interested in investigating.</li>
-<li>For &#8220;<em>Terrain</em>&#8221; and &#8220;<em>Elevation</em>&#8221; we only can visualize it.</li>
-<li>For &#8220;<em>Viewshed</em>&#8221; and &#8220;<em>Watershed</em>&#8221; we can move the point we have so that we can investigate specific and diferent locations over the terrain.</li>
-<li>The text number bars that appears tells us the 10 highest and the 10 lowest data we have for that type of analyze.</li>
-<li>Finally the &#8220;<em>Optimize Location</em>&#8220;: if you set the ranges that we talked before thinking on where to locate your project, this type will tell you where are the best places to settle it.</li>
-<li>You can download all the landscape visualizations as 3D meshes and curves.</li>
-</ol>
-<p><strong>Video explaining the web app functions:</strong></p>
-<p><a href="">&lt;p&gt;</p>
-<div class="fluid-embed"><iframe loading="lazy" title="TERRA LANDSCAPE WEB APP" width="700" height="394" src="https://www.youtube.com/embed/gROJeytQqME?feature=oembed&#038;showinfo=0&#038;autohide=1&#038;rel=0&#038;wmode=opaque&#038;showinfo=0&#038;autohide=1&#038;rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<p>&lt;/p&gt;</a></p>
-<p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;TERRA is a project of IAAC, Institute for Advanced Architecture of Catalonia developed in the Master of Advanced Computation in Architecture and Design 2021/22 by Students: Jacinto Moros Faculty: David Andres Leon and Hesham Shawqy&quot;}" data-sheets-userformat="{&quot;2&quot;:15235,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;Arial&quot;,&quot;16&quot;:8}"><strong>TERRA: Landscape Web App</strong> is a project of <strong>IAAC</strong>, Institute for Advanced Architecture of Catalonia developed in the Master of Advanced Computation in Architecture and Design 2021/22 by <strong>Students</strong>: Jacinto Moros <strong>Faculty</strong>: David Andres Leon and Hesham Shawqy</span></p>
+        <h1 align="center"> Project Title - Readme.md HTML Template </h1>
+
+        <p align="center"> Intro - Boilerplate for Readme.md on Github </p>
+
+        <hr/>
+
+        <p> Describe you project -> I hate to always "reinvent" README.md on GitHub that is why I decided to make this Starter README.md template. Also I prefer HTML syntax because I use HTML every day and it has some extra features like center the elements. </p>
+
+        <h3> List of features </h3>
+
+        <ul>
+        <li>Beautiful Starter Template for README.md</li>
+        <li>Key feature num. 2</li>
+        <li>Key feature num. 3</li>
+        <li>Key feature num. 4</li>
+        </ul>
+
+        <h3> Demo -> Show me what you got </h3>
+
+        <a href="#"> Link to your awesome Demo </a>
+
+        <a href="#"> Another Link to your awesome Demo </a>
+
+        <a href="https://www.designinspiration.info/"> Design Fonts Inspiration </a>
+
+        <h3> Code Demo </h3>
+
+        ```html
+
+        We will use markdown for the Syntax Highlighting
+
+        <ul>
+        <li>Beautiful Starter Template for README.md</li>
+        <li>Key feature num. 2</li>
+        <li>Key feature num. 3</li>
+        <li>Key feature num. 4</li>
+        </ul>
+
+        ```
+
+        <h3> Download & Installation </h3>
+
+        ```shell
+        $ npm i boilerplate-readme-template
+        ```
+        <h3>Contributing</h3>
+        Keep it simple. Keep it minimal. Don't put every single feature just because you can.
+
+        <h3>Authors or Acknowledgments</h3>
+        <ul>
+        <li>Vladimir Carrer</li>
+        </ul>
+
+        <h3>License</h3>
+
+        This project is licensed under the MIT License
     </div>
 </body>
 </html>

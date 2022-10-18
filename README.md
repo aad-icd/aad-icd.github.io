@@ -1,5 +1,2 @@
-<h1 align="center"> Project Title - Readme.md HTML Template </h1>
-
-<p align="center"> Intro - Boilerplate for Readme.md on Github </p>
-
-<hr/>
+<h1 align="center"> Associative and Algorithmic Design WS 2022/2023 </h1>
+<p align="center"> Please use this template for your assigment by forking the repository </p>

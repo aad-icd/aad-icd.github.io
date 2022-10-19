@@ -53,15 +53,20 @@ code {
 	width: 75vw
 }
 
+img{
+	margin-bottom: 2em
+}
+
 p {
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	margin-bottom: 2em
   }
 
 .responsive-iframe {
-position: absolute;
 width: 70vw;
 height: 40vw;
+margin-bottom: 5em
 }

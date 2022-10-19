@@ -37,6 +37,16 @@ header {
 	-ms-user-select: none;
 }
 
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	margin-bottom: 0.25em
+}
+
 code {
 	background-color: #CCC;
 	display: block;

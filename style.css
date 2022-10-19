@@ -23,6 +23,25 @@ nav#navbar a {
 	color: black;
 }
 
+nav#navbar a:active {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 20px;
+	background-color: black;
+  	color: white;
+	box-shadow: 2px 2px 5px grey;
+}
+
+nav#navbar a:hover:not(.active) {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 20px;
+	background-color: black;
+  	color: white;
+}
+
 main#main-doc {
 	grid-area: mainContent;
 	width: 70vw

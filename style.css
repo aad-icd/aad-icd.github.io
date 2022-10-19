@@ -45,6 +45,11 @@ code {
     height: 50vh
 }
 
+#home-page{
+	width: 70vw;
+    height: 50vh
+}
+
 p {
 	user-select: none;
 	-moz-user-select: none;

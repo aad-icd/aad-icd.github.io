@@ -21,15 +21,39 @@ nav#navbar a {
 
 main#main-doc {
 	grid-area: mainContent;
+	width: 70vw
 }
 
 header {
 	font-size: 1.5rem;
 	font-weight: bold;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 code {
 	background-color: #CCC;
 	display: block;
 	padding: 20px;
+	width:70vw
+}
+
+#web-app{
+    width: 70vw;
+    height: 50vh
+}
+
+p {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+  }
+
+.responsive-iframe {
+position: absolute;
+width: 70vw;
+height: 40vw;
 }

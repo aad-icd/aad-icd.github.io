@@ -10,7 +10,9 @@ nav#navbar {
 	position: fixed;
 }
 
-
+header#nav-header{
+	margin: 10px 20px;
+}
 
 nav#navbar a {
 	display: block;

@@ -10,11 +10,15 @@ nav#navbar {
 	position: fixed;
 }
 
+header#nav-header{
+	margin: 10px 20px;
+}
+
 nav#navbar a {
 	display: block;
 	border: 1px solid black;
 	padding: 5px;
-	margin: 10px 0;
+	margin: 10px 20px;
 	text-decoration: none;
 	color: black;
 }
@@ -46,8 +50,7 @@ code {
 }
 
 #home-page{
-	width: 70vw;
-    height: 50vh
+	width: 75vw
 }
 
 p {

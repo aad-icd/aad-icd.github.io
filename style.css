@@ -8,10 +8,28 @@ div.main-body {
 nav#navbar {
 	grid-area: navbar;
 	position: fixed;
+	width: 300px;
 }
 
 header#nav-header{
 	margin: 10px 20px;
+}
+
+footer#nav-footer{
+	margin: 20px 20px;
+	font-size: 1rem;
+}
+
+footer#nav-footer2{
+	margin: 20px 20px;
+	font-size: 1rem;
+	
+}
+
+footer#nav-footer2 br{
+	margin: 20px 20px;
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 nav#navbar a {

@@ -39,6 +39,7 @@ nav#navbar a {
 	margin: 10px 20px;
 	text-decoration: none;
 	color: black;
+	text-align: center;
 }
 
 nav#navbar a:active {

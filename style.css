@@ -18,7 +18,7 @@
     text-align: center;
     transition: all 500ms ease;
     font-size:1vw;
-    width: 80%;
+    width: 8%;
     min-height: 95%;
     margin: 1%;
     padding-top: 3.5%;
@@ -26,13 +26,9 @@
 }
 
 video{
-    position:absolute;
-    color:transparent;
-    width: 80%;
+    width: 925%;
     min-height: 95%;
-    margin: 1%;
-    padding-top: 3.5%;
-    left: 22%;
+    color: transparent;
     opacity: 80%;
 }
 

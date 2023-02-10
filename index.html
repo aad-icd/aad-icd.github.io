@@ -1,86 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <link rel="stylesheet" href="style.css">
-    <title>AAD WS 2022/2023</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/src/TweenMax.min.js"></script>
+  
+    <title>AAD22</title>
 </head>
 <body>
-    <div class="main-body">
-		<nav id="navbar">
-			<header id="nav-header">AAD 2022/2023</header>
+    <div class="side-bar">
+        <header>Associative and Algorithmic Design 2022/2023</header> 
+        <nav id="navbar">
+        <!--header id="nav-header">AAD 2022/2023</header-->
 			<a href="https://roanwo.github.io/CityDraft/LandingPage/LandingPage.html" class="nav-link" target="_blank">
-				CITY DRAFT</a>
-			<a href="https://veom.app/" class="nav-link" target="_blank">
-				VEOM</a>
-			<a href="https://acdfractaldesign.github.io/" class="nav-link" target="_blank">
-				SHEVILION</a>
-			<a href=" " class="nav-link" target="_blank">
-				PLANIFY</a>
-			<a href=" " class="nav-link" target="_blank">
-				ARCHINKLUENCER</a>
-			<a href="https://main--monumental-starburst-a10422.netlify.app" class="nav-link" target="_blank">
-				SHADOW PUPPETRY</a>
-			<footer id="nav-footer">The exhibition features interactive web application developed by the students using Python, PyScript and THREE.js as. 
-				Learning through individual and group assignments, the web-apps developed aim at providing designers and novice users easy access to complex geometry generation, 
-				on-demand 3D-printing, public participation in design in micro and macro scales and, public-space accessibility and environmental adaptability.</footer>
+				CITY DRAFT
+            </a>
+            <a href="https://veom.app/" class="nav-link" target="_blank">
+                VEOM</a>
+            <a href="https://acdfractaldesign.github.io/" class="nav-link" target="_blank">
+                SHEVILION</a>
+            <a href=" " class="nav-link" target="_blank">
+                PLANIFY</a>
+            <a href=" " class="nav-link" target="_blank">
+                ARCHINKLUENCER</a>
+            <a href="https://main--monumental-starburst-a10422.netlify.app" class="nav-link" target="_blank">
+                SHADOW PUPPETRY</a>
+            
+            <footer id="nav-footer">
+                <p> The AAD2022 exhibition features interactive web application developed by the students. A first of its kind, the course explored parametric design using Python, PyScript and THREE.js. Learning through individual and group assignments, the web-apps developed aim at providing designers and novice-users easy-access to complex geometry generation, on-demand 3D-printing, public participation in design in micro and macro scales and, public-space accessibility and environmental adaptability. All designs are open source on GitHub.</p>
+            </footer>
+            <footer id="nav-footer2" target="_blank">
+                <b>Instructor: </b>
+                <br>Jun.-Prof. Thomas Wortmann, Ph.D.</br>
+                <br>
+                <b>Tutors:</b>
+                <br>Zuardin Akbar
+                <br>Gili Ron
 
-			<footer id="nav-footer2" target="_blank">
-				<b>Course: </b>
-				<br>Associative and Algorithmic Design</br>
+                <br>
+                <br>Chair for Computing in Architecture
+                <br>Institute for Computational Design and Construction
+                <br>University of Stuttgart
 
-				<b>Instructor: </b>
-				<br>Tenure-Track Prof. Thomas Wortmann, Ph.D.</br>
-				
-				<b>Tutors:</b>
-				<br>Zuardin Akbar, Gili Ron </br>
-			</footer>
-			
-		</nav>
 
-		<main id="main-doc">
-            <section class="container" id="home-page" style = "position:relative; align-items: center; top:60px">
-                <video id="vid"  controls autoplay muted>
-					<source src="videos/AAD-CityDraft.mp4" type="video/mp4">
-				</video> 
-			
-			
-        </main>
-		
-            </section>
+            </footer>
+        </nav>
     </div>
-
-	<script> 
-			
-			var videoList = [
-			"videos/AAD-CityDraft.mp4",
-			"videos/Archinkluencer-Hofer_1.mp4",
-			"videos/AAD Groupwork VEOM.mp4",
-			"videos/shevillon_aad22_1.mp4",
-			"videos/shade_puppetry_1.mp4"
-			]
-			var curVideo = 0;
-			var videoPlayer = document.getElementById('vid');
-
-			console.log(videoPlayer)
-
-			videoPlayer.onended = function(){
-    		curVideo++;  
-
-    		if(curVideo < videoList.length){            
-        	videoPlayer.src = videoList[curVideo];  
-      //  return;      
-    	}  
-    	if (curVideo == videoList.length){
-        curVideo=0;
-       videoPlayer.src = videoList[curVideo];       
-    	}
-}
-
-
-			
-		</script>
+    <div class="main-body">
+        <video id="vid"  controls autoplay muted>
+            <source src="videos/AAD Groupwork VEOM.mp4" type="video/mp4">
+        </video> 
+    </div>
+    <script src="videoplayer.js"></script>
+    <script src="sketch.js"></script>
 </body>
 </html>

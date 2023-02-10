@@ -1,120 +1,78 @@
-div.main-body {
-	display: grid;
-	grid-template-columns: minmax(300px , auto)1fr;
-	grid-template-areas: "navbar mainContent";
-	grid-gap: 20px;
+.side-bar{
+    position:absolute;
+    color:black;
+    font-family:Helvetica;
+    text-align: center;
+    transition: all 500ms ease;
+    font-size:1vw;
+    width: 19%;
+    min-height: 95%;
+    margin: 1%;
+    padding-top: 0.75%;
 }
 
-nav#navbar {
-	grid-area: navbar;
-	position: fixed;
-	width: 300px;
+.main-body{
+    position:absolute;
+    color:transparent;
+    font-family:Helvetica;
+    text-align: center;
+    transition: all 500ms ease;
+    font-size:1vw;
+    width: 8%;
+    min-height: 95%;
+    margin: 1%;
+    padding-top: 3.5%;
+    left: 22%;
 }
 
-header#nav-header{
-	margin: 10px 20px;
+video{
+    width: 925%;
+    min-height: 95%;
+    color: transparent;
+    opacity: 80%;
 }
 
-footer#nav-footer{
-	margin: 20px 20px;
-	font-size: 1rem;
-}
-
-footer#nav-footer2{
-	margin: 20px 20px;
-	font-size: 1rem;
-	
-}
-
-footer#nav-footer2 br{
-	margin: 20px 20px;
-	font-size: 1rem;
-	font-weight: bold;
+body {
+    color: white;
+    margin: 0;
+    text-align: center;
+    cursor: crosshair;
 }
 
 nav#navbar a {
 	display: block;
 	border: 1px solid black;
-	padding: 5px;
-	margin: 10px 20px;
+	padding: 2%;
+    margin-top: 3%;
 	text-decoration: none;
 	color: black;
 	text-align: center;
-}
-
-nav#navbar a:active {
-	display: block;
-	border: 1px solid black;
-	padding: 5px;
-	margin: 10px 20px;
-	background-color: black;
-  	color: white;
-	box-shadow: 2px 2px 5px grey;
+    cursor:crosshair;
 }
 
 nav#navbar a:hover:not(.active) {
 	display: block;
 	border: 1px solid black;
-	padding: 5px;
-	margin: 10px 20px;
-	background-color: black;
-  	color: white;
+    padding: 2%;
+    margin-top: 3%;
+	text-decoration: none;
+	text-align: center;
+    cursor:crosshair;
+  	color: black;
+    position: relative;
+    left: 10%;
 }
 
-main#main-doc {
-	grid-area: mainContent;
-	width: 70vw
+p{
+    font-size:0.8vw;
+    color: black
 }
 
-header {
-	font-size: 1.5rem;
-	font-weight: bold;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+footer#nav-footer2{
+    font-size:0.9vw;
+    color: black
 }
 
-h1 {
-	font-size: 2rem;
-	font-weight: bold;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	margin-bottom: 0.25em
-}
-
-code {
-	background-color: #CCC;
-	display: block;
-	padding: 20px;
-	width:70vw
-}
-
-#web-app{
-    width: 70vw;
-    height: 50vh
-}
-
-#home-page{
-	width: 75vw
-}
-
-img{
-	margin-bottom: 2em
-}
-
-p {
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	margin-bottom: 2em
-  }
-
-.responsive-iframe {
-width: 70vw;
-height: 40vw;
-margin-bottom: 5em
+header{
+ font-weight: bold;
 }

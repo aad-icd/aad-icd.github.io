@@ -1,8 +1,6 @@
 var videoList = [
     "videos/AAD Groupwork VEOM.mp4",
     "videos/AAD-CityDraft.mp4",
-    "videos/Archinkluencer-Hofer_1.mp4",
-    "videos/shade_puppetry_1.mp4",
     "videos/shevillon_aad22_1.mp4",
     ]
     var curVideo = 0;
